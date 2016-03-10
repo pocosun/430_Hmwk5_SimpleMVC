@@ -17,11 +17,13 @@ html(lang="en")
       input(type="submit", value="Submit")
     br
     br
+    //form to update the last added Cat.
     form(action="/updateLast", method="POST")
       | Update Last:
       input(type="submit", value="Submit")
     br
     br
+    //form to find a cat by full name (instead of first name and last name)
     form(action="/findByName", method="GET")
       | Name to search for:
       input(type="text", name="name", value="")
