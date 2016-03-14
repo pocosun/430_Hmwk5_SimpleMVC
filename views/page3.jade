@@ -7,3 +7,19 @@ html(lang="en")
     a(href="/") Home
     a(href="/page1") Page 1
     a(href="/page2") Page 2
+    form(action="/setDog", method="POST")
+      | Name of Doggy:
+      input(type="text", name="name", value="")
+      | Breed of Doggy:
+      input(type="text", name="breed", value="")
+      | Age of Doggy:
+      input(type="number", name="age" value="")
+
+      input(type="submit", value="Submit")
+    br
+    br
+    //form to find a cat by full name (instead of first name and last name)
+    form(action="/findByDog", method="GET")
+      | Name to search for:
+      input(type="text", name="name", value="")
+      input(type="submit", value="Submit")   
